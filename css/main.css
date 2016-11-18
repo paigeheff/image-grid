@@ -18,6 +18,7 @@ html {
 
 img {
   width: 100%;
+  float:left;
 }
 
 body {
@@ -25,9 +26,49 @@ body {
 }
 
 img:first-child, img:nth-child(3), img:nth-child(4) {
-  display: inline;
+  float: left;
 }
 
 img:nth-child(2), img:nth-child(5) {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+img:nth-child(3), img:nth-child(4), img:nth-child(2), img:nth-child(5) {
+  width: 50%;
+  display: block;
+}
+
+@media only screen and (min-width: 38em) {
+
+img:nth-child(3), img:nth-child(4), img:nth-child(2) {
+  width: 33.3333%;
+
+}
+
+img:nth-child(5) {
+  display: none;
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img:first-child {
+    width: 66.6666%;
+  }
+
+  img:nth-child(5) {
+    width: 33.333%;
+    display: block;
+  }
+
+
+}
+
+@media only screen and (min-width: 90em) {
+
+
+
 }
